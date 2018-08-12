@@ -1,0 +1,64 @@
+{
+  "extends": "airbnb",
+  "env": {
+      "browser": true,
+      "node": true,
+      "jasmine": true,
+      "jest": true
+  },
+  "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module",
+      "ecmaFeatures": {
+          "jsx": true
+      }
+  },
+  "rules": {
+      "comma-dangle": [
+          "error",
+          {
+              "arrays": "always-multiline",
+              "objects": "always-multiline",
+              "imports": "always-multiline",
+              "exports": "always-multiline",
+              "functions": "ignore"
+          }
+      ],
+      "no-trailing-spaces": [
+          "error"
+      ],
+      "react/jsx-filename-extension": [
+          1,
+          {
+              "extensions": [
+                  ".js",
+                  ".jsx"
+              ]
+          }
+      ],
+      "react/forbid-prop-types": [
+          "off",
+          "should turn on later"
+      ],
+      "react/prop-types": [
+          "off",
+          "should turn on later"
+      ],
+      "class-methods-use-this": [
+          "off",
+          "should turn on later"
+      ],
+      "react/prefer-stateless-function": [
+        "off",
+        "we prefer class syntax"
+    ],
+      "react/no-unused-prop-types": [
+          "off",
+          "buggy: https://github.com/yannickcr/eslint-plugin-react/issues/811"
+      ],
+      "jsx-a11y/no-static-element-interactions": [
+          "off",
+          "major bug fix pending release: https://github.com/evcohen/eslint-plugin-jsx-a11y/issues/214"
+      ]
+  }
+}
